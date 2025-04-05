@@ -1,0 +1,23 @@
+:root {
+
+}
+
+header div {
+    display: inline-block;
+}
+
+#web-log {
+    width: 50px;
+}
+
+#web-name {
+    width: auto;
+    text-align: center;
+}
+
+@media screen and (min-width: 1024px){
+    body {
+        width: 1000px;
+        margin: 0 auto;
+    }
+}
