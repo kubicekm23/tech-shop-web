@@ -1,5 +1,84 @@
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
 
+/* layout stránky -> layout.bradwoods.io/    holy grail */
+
+:root {
+    --dark-text: hsla(239, 94%, 19%, 1);
+    --background: hsla(201, 100%, 36%, 1);
+    --light-background: hsla(190, 100%, 42%, 1);
+    --link-text: hsla(189, 75%, 75%, 1);
+    --light-text: hsla(190, 77%, 88%, 1);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: var(--background);
+    margin: 0;
+    display: grid;
+    height: 100%;
+
+    font-family: "Roboto", "serif";
+
+    grid-template-columns: auto;
+    grid-template-rows: auto auto 1fr auto auto;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+
+header {
+    grid-area: header;
+    background-color: var(--dark-text);
+    color: var(--light-text);
+    padding: 0.5em;
+    font-family: "Teko", sans-serif;
+}
+
+h1 {
+    vertical-align:center;
+    font-size: 4em;
+    margin: 0;
+}
+
+header img {
+    height: 50px;
+    vertical-align:center;
+}
+
+nav {
+    grid-area: nav;
+    background-color: var(--background);
+    color: var(--link-text);
+    padding: 0.2em;
+}
+
+main {
+    grid-area: main;
+    background-color: var(--light-background);
+    color: var(--dark-text);
+    padding: 0.4em;
+}
+
+main img {
+    width: 350px;
+    border-radius: 15px;
+    float: left;
+    margin-right: .5em;
+    margin-bottom: .5em;
+}
+
+footer {
+    grid-area: footer;
+    background-color: var(--background);
+    color: var(--link-text);
+    padding: 0.2em;
+    text-align: center;
 }
 
 header div {
@@ -15,9 +94,25 @@ header div {
     text-align: center;
 }
 
+article {
+    display: block;
+}
+
 @media screen and (min-width: 1024px){
     body {
-        width: 1000px;
-        margin: 0 auto;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto  1fr auto;
+
+        grid-template-areas: 
+            "header header"
+            "nav main"
+            "footer footer";
+    }
+    main img {
+        width: 500px;
+    }
+    header img {
+        height: 50px;
+        vertical-align:center;
     }
 }
