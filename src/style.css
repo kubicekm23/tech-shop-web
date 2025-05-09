@@ -132,6 +132,10 @@ article:hover {
     transform: translateY(-4px);
 }
 
+article img {
+    margin-right: 1.5em;
+}
+
 #navMenu {
     display: none;
 }
@@ -206,6 +210,27 @@ footer img {
     vertical-align: middle;
 }
 
+button {
+    background-color: white;
+    color: var(--dark-text);
+    border: none;
+    padding: 0.6em 1.2em;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: whitesmoke;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+    background-color: whitesmoke;
+}
 @media screen and (min-width: 1024px){
     body {
         grid-template-columns: auto 1fr;
