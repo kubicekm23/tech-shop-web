@@ -48,7 +48,7 @@ header {
 
 h1 {
     vertical-align: middle;
-    font-size: 4em;
+    font-size: 2em;
     margin: 0;
 }
 
@@ -233,6 +233,10 @@ button:active {
 }
 
 @media screen and (min-width: 1024px){
+    h1 {
+        font-size: 4em;
+    }
+
     body {
         grid-template-columns: auto 1fr;
         grid-template-rows: auto  1fr auto;
