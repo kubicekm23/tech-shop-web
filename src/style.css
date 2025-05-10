@@ -231,6 +231,7 @@ button:active {
     transform: translateY(0);
     background-color: whitesmoke;
 }
+
 @media screen and (min-width: 1024px){
     body {
         grid-template-columns: auto 1fr;
