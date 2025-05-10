@@ -267,3 +267,7 @@ button:active {
         padding: 2em;
     }
 }
+
+.align-center {
+    text-align: center;
+}
